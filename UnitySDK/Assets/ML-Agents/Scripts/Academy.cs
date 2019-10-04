@@ -179,7 +179,7 @@ namespace MLAgents
         /// engine settings at the next environment step.
         bool m_ModeSwitched;
 
-        /// Pointer to the batcher currently in use by the Academy.
+        /// Pointer to the communicator currently in use by the Academy.
         ICommunicator m_Communicator;
 
         // Flag used to keep track of the first time the Academy is reset.
