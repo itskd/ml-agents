@@ -20,8 +20,7 @@ namespace MLAgents
         [SerializeField] public BrainParameters brainParameters;
 
         /// <summary>
-        /// List of agents subscribed for decisions.  Cleared by subclasses of this class.
-        /// TODO(cgoy): Should the agent list be cleared by this class?
+        /// List of agents subscribed for decisions.
         /// </summary>
         protected List<Agent> m_Agents = new List<Agent>(1024);
 
