@@ -621,7 +621,7 @@ namespace MLAgents
             m_Info.maxStepReached = m_MaxStepReached;
             m_Info.id = m_Id;
 
-            brain.Update(this);
+            brain.SubscribeAgentForDecision(this);
 
             if (m_Recorder != null && m_Recorder.record && Application.isEditor)
             {

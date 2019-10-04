@@ -5,7 +5,7 @@ using UnityEngine;
 namespace MLAgents
 {
     /// <summary>
-    /// Brain receive data from Agents through calls to Update. The brain then updates the
+    /// Brain receive data from Agents through calls to SubscribeAgentForDecision. The brain then updates the
     /// actions of the agents at each FixedUpdate.
     /// The Brain encapsulates the decision making process. Every Agent must be assigned a Brain,
     /// but you can use the same Brain with more than one Agent. You can also create several
@@ -38,10 +38,10 @@ namespace MLAgents
         }
 
         /// <summary>
-        /// Updates the data of an agent to the current batch so it will be processed in DecideAction.
+        /// Registers an agent to current batch so it will be processed in DecideAction.
         /// </summary>
         /// <param name="agent"></param>
-        public void Update(Agent agent)
+        public void SubscribeAgentForDecision(Agent agent)
         {
             LazyInitialize();
             m_Agents.Add(agent);
