@@ -118,7 +118,6 @@ namespace MLAgents
         {
             if (m_Communicator != null)
             {
-                m_Agents.Clear();
                 return;
             }
             var currentBatchSize = m_Agents.Count;
@@ -157,7 +156,6 @@ namespace MLAgents
             m_TensorApplier.ApplyTensors(m_InferenceOutputs, m_Agents);
             Profiler.EndSample();
 
-            m_Agents.Clear();
             Profiler.EndSample();
         }
 

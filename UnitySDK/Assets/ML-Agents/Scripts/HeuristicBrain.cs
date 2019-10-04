@@ -79,7 +79,6 @@ namespace MLAgents
                     info.done,
                     info.memories));
             }
-            m_Agents.Clear();
         }
     }
 }

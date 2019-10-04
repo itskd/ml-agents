@@ -99,7 +99,6 @@ namespace MLAgents
                     agent.UpdateVectorAction(action);
                 }
             }
-            m_Agents.Clear();
         }
     }
 }

@@ -90,6 +90,8 @@ namespace MLAgents
         {
             m_Communicator?.PutObservations(name, m_Agents);
             DecideAction();
+            // Clear the agent Decision subscription collection for the next update cycle.
+            m_Agents.Clear();
         }
 
         /// <summary>
