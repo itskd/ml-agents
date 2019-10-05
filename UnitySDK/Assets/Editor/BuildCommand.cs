@@ -33,7 +33,7 @@ static class BuildCommand
 //            select scene.path
 //        ).ToArray();
 
-        return new[] {"/Assets/ML-Agents/Examples/3DBall/Scenes/3DBall.unity"};
+        return new[] {"Assets/ML-Agents/Examples/3DBall/Scenes/3DBall.unity"};
     }
 
     static BuildTarget GetBuildTarget()
